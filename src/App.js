@@ -10,7 +10,7 @@ function App() {
   let interval = useRef();
 
   const startTimer = () => {
-    const countdownDate = new Date("January 8, 2021 00:00:00").getTime();
+    const countdownDate = new Date("Jan 12 2021 00:00:00 ").getTime();
     interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = countdownDate - now;
@@ -46,9 +46,11 @@ function App() {
     <section className="timer-container">
       <section className="timer">
         <div>
-          <span className="mdi mdi-calendar-clock timer-icon"></span>
-          <h2>New Project Coming Soon</h2>
-          <p>Don't miss the first day!</p>
+          <span className="mdi mdi-alarm timer-icon"></span>
+          <>
+            <h2>New Project Coming Soon</h2>
+            <p>Don't miss the first day!</p>
+          </>
         </div>
 
         <div>
